@@ -21,7 +21,7 @@
         <maven.surefire.version>3.2.5</maven.surefire.version>
         <rest-assured.version>5.5.0</rest-assured.version>
         <testng.version>7.10.2</testng.version>
-        <allure.version>2.24.0</allure.version>
+        <allure.version>2.30.0</allure.version>
         <allure.maven.version>2.17.0</allure.maven.version>
         <allure.report.version>2.30.0</allure.report.version>
         <openscsv.version>5.12.0</openscsv.version>
@@ -80,7 +80,6 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-rest-assured</artifactId>
             <version>${allure.version}</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>

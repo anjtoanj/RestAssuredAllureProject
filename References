@@ -1,3 +1,4 @@
+*********************************************************************************************
 SEQUENCE OF AllureUtils and AllureListener
 
 Let's understand the sequence.
@@ -17,3 +18,19 @@ Tags are added to each test
 
 5. Allure report
 Displays test results, tags and environment information.
+*********************************************************************************************
+How ConfigBuilder and RequestSpecFactory work together
+This is the most important connection in your framework.
+You run Maven
+mvn clean test -Denv=QA
+
+ConfigBuilder
+Reads QA.properties
+QA environment selected
+
+RequestSpecFactory
+Calls ConfigBuilder.getBaseUrl()
+Builds the common API request configuration
+
+API Test
+Executes requests against QA
