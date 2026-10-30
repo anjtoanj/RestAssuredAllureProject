@@ -1,0 +1,19 @@
+SEQUENCE OF AllureUtils and AllureListener
+
+Let's understand the sequence.
+1. You run Maven
+mvn clean test
+
+2. TestNG starts
+onStart() executes
+Creates environment.properties
+
+3. First test starts
+onTestStart() executes
+Adds smoke/regression tags
+
+4. Other tests execute
+Tags are added to each test
+
+5. Allure report
+Displays test results, tags and environment information.
